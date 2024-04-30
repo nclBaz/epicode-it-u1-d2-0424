@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di form</title>
+  </head>
+  <body>
+    <h2>REGISTRAZIONE UTENTI</h2>
+    <form>
+      <!-- Il tag <form> deve racchiudere tutto il contenuto del form -->
+      <div>
+        <label for="campo-nome">Inserisci il tuo nome:</label>
+        <input type="text" id="campo-nome" placeholder="Nome proprio" autofocus required />
+      </div>
+      <div>
+        <label for="campo-cognome">Inserisci il tuo cognome:</label>
+        <input type="text" id="campo-cognome" placeholder="Cognome" required />
+      </div>
+      <div>
+        <label for="campo-eta">Inserisci il tuo età:</label>
+        <input type="number" id="campo-eta" placeholder="Età" min="0" max="110" required />
+      </div>
+      <div>
+        <label for="campo-compleanno">Inserisci la data di nascita:</label>
+        <input type="date" id="campo-compleanno" placeholder="Data di nascita" required />
+      </div>
+      <div>
+        <label for="campo-hobby">Scrivi qui i tuoi hobby!</label>
+        <textarea id="campo-hobby" rows="5" maxlength="100"></textarea>
+      </div>
+      <div>
+        <label>Che sviluppatore vuoi diventare?</label>
+        <select>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Fullstack</option>
+        </select>
+      </div>
+      <div>
+        <!-- Questo bottone è automaticamente diventato un bottone
+        di tipo "submit", solo perché è stato definito dentro il tag form -->
+        <button>INVIA</button>
+      </div>
+    </form>
+    <!-- Questo bottone essendo all'esterno del form non sarà di tipo "submit" -->
+    <button onclick="alert('CIAO A TUTTI!')">BUTTON GENERICO</button>
+  </body>
+</html>
